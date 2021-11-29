@@ -1,0 +1,51 @@
+/*(Artifact Script)
+     * public void Attach(Collider2D collider, Transform artifactSlot, Player player)
+    {
+        if (collider.gameObject.tag == "Artifact")
+        {
+            //mayb we can change all referencees of collider.gameobject to "this"
+            GameObject artifactToAttach = collider.gameObject;
+            artifactToAttach.tag = "ArtifactOnPlayer";
+            artifactToAttach.transform.parent = artifactSlot;
+            artifactSlot.tag = "FullSlot";
+            artifactSlot.GetComponent<Image>().enabled = true;
+            artifactSlot.GetComponent<Image>().sprite = sprite.sprite;
+            Destroy(rb);
+            collider.enabled = false;
+            sprite.enabled = false;
+            player.hasArtifact = true;
+            particleEffect.SetActive(false);
+        }
+    }
+     */
+(Player Script)
+/*
+     *  protected void PickUp(Collider2D[] artifacts)
+    {
+        //Picks up an articat if possible. 
+        foreach (Collider2D artifact in artifacts)
+        {
+            //if player doesnt have an artifact in his use slot then put it there
+            if (!hasArtifact)
+                artifact.GetComponent<Artifact>().Attach(artifact, artifactSlot, this);
+            //else put in his inventory' if inventory full say it to him
+            else
+            {
+                if (!GameManager.instance.isInventoryFull(artifactInventory))
+                    for (int i = 0; i < artifactInventory.Length; i++)
+                    {
+                        if (artifactInventory[i].tag == "EmptySlot")
+                        {
+                            artifact.GetComponent<Artifact>().Attach(artifact, artifactInventory[i].transform, this);
+                            break;
+                        }
+                    }
+                else
+                {
+                    Debug.Log("Inventory Is Full");
+                    artifact.GetComponent<Artifact>().particleEffect.SetActive(false);
+                }
+            }
+        }
+    }
+     */

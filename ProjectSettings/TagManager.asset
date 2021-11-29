@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Platform
+  - Ceiling
+  - Ground
+  - Portal
+  - Artifact
+  - ArtifactOnPlayer
+  - EmptySlot
+  - FullSlot
+  - Projectile
+  - ArtifactSpawnPlace
+  - ArtifactSlotP1
+  - ArtifactSlotP2
+  - ArtifactSlotP3
+  - ArtifactSlotP4
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Artifcat
+  - 
+  - 
+  - Background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Effect
+    uniqueID: 3163914615
+    locked: 0
+  - name: Artifact
+    uniqueID: 954888379
+    locked: 0
